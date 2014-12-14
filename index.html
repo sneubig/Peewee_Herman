@@ -1,6 +1,7 @@
 <html>
 <head>
-	<title></title>
+	<title>Conky App</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="css/normalize.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
@@ -9,13 +10,30 @@
 	<div class="container">
 		<div class="content">
 			<img class="conky" src="img/conky.jpg">
+			
 			<br>
 			<br>
-			<div class="button"><h6>Secret Word!</h6>
+
+			<div id="paper"></div>
+			
+			<br>
+			<br>
+
+			<div class="instructions button">
+				<h6>Instructions from Peewee</h6>
+				<audio id="peewee-instructions" src="http://www.wavsource.com/snds_2014-12-14_2765172096212852/tv/pee-wee/secret_word.wav" preload="auto"></audio>
+			</div>
+
+			<div class="conky-start button">
+				<h6>Secret Word!</h6>
 				<audio id="conky-sound" src="http://www.jeffbots.com/conky2000.wav" preload="auto"></audio>
 			</div>
-			<br>
-			<div id="paper"></div>
+
+			<div class="scream button">
+				<h6>Scream with Peewee!</h6>
+				<audio id="peewee-scream" src="http://www.wavsource.com/snds_2014-12-14_2765172096212852/tv/pee-wee/aahhhh.wav" preload="auto"></audio>
+
+			</div>
 		</div>
 	</div>
 

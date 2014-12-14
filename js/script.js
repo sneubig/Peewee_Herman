@@ -1,19 +1,33 @@
 $(function() {
-    $(".button").on('click', function(){
-    	// console.log("working!");
-    	$(this).toggleClass('active');
+
+	 	$('.button').bind('click', function() {
+      // remove the active class from all elements with active class
+      $('.active').removeClass('active')
+      // add active class to clicked element
+      $(this).addClass('active');
+  	});
+
+    $(".conky-start").on('click', function(){
  			
  			// Conky Sound Clip
-			// document.getElementById('conky-sound').play();
+			document.getElementById('conky-sound').play();
 
 			getSecretWord();
 
     });
 
+    $('.instructions').on('click', function(){
+    	document.getElementById('peewee-instructions').play();
+    });
+
+    $('.scream').on('click', function(){
+    	document.getElementById('peewee-scream').play();
+    });
+
     function getSecretWord(){
-    	var words = ["fun", "rain", "christmas"];
+    	var words = ["fun", "rain", "christmas", "look"];
     	var rand = words[Math.floor(Math.random() * words.length)];
-    	
+
     	if ('.active'){
     		$('#paper').text('');
     		console.log(rand);

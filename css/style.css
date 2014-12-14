@@ -45,14 +45,26 @@ img{
 	position: relative;
 }
 
-.button{
-	width: 5em;
-	height: 5em;
-	border-radius: 100%;
+.instructions{
+	background-color: green;
+}
+
+.conky-start{
 	background-color: red;
+}
+
+.scream{
+	background-color: blue;
+}
+
+.button{
+	width: 6em;
+	height: 6em;
+	border-radius: 100%;
 	border: 2px solid #fff;
 	box-shadow: -2px 2px 0px #000;
-	margin: 0 auto;
+	display: inline-block;
+	padding: 1em;
 }
 
 .button:active{
@@ -77,4 +89,16 @@ img{
 
 #paper h3{
 	text-align: center;
+}
+
+@media (min-width: 500px) and (max-width: 980px) {
+	.container{
+		width: 60%;
+	}
+}
+
+@media (max-width: 500px) {
+	.container{
+		width: 100%;
+	}
 }
