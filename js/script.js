@@ -4,7 +4,7 @@ $(function() {
     	$(this).toggleClass('active');
  			
  			// Conky Sound Clip
-			document.getElementById('conky-sound').play();
+			// document.getElementById('conky-sound').play();
 
 			getSecretWord();
 
@@ -15,9 +15,9 @@ $(function() {
     	var rand = words[Math.floor(Math.random() * words.length)];
     	
     	if ('.active'){
+    		$('#paper').text('');
     		console.log(rand);
-    		$( "<p>" + rand + "</p>" ).appendTo( "#paper" );
-    		
+    		$( "<h3>" + rand + "</h3>" ).appendTo( "#paper" );
     	} else{
     		console.log("not working!");
     	};

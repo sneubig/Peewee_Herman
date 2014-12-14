@@ -20,14 +20,21 @@ header{
 header h2{
 	color: white;
 }
+
 .container{
-	height: 100%;
+	height: 90%;
 	width: 40%;
 	/*margin-left: 20%;*/
 	margin: 0 auto;
 	position: relative;
-
 	background-color: rgba(0,0,0,0.8);
+}
+
+.content{
+	height: 90%;
+	width: 100%;
+	position: relative;
+	top: 10%;
 }
 
 img{
@@ -40,8 +47,8 @@ img{
 	width: 5em;
 	height: 5em;
 	border-radius: 100%;
-	background-color: white;
-	border: 2px solid black;
+	background-color: red;
+	border: 2px solid #fff;
 	box-shadow: -2px 2px 0px #000;
 	margin: 0 auto;
 }
@@ -59,8 +66,12 @@ img{
 
 #paper{
 	width: 60%;
-	height: 20%;
+	height: 10%;
 	background-color: white;
 	border: 5px solid black;
 	margin: 0 auto;
+}
+
+#paper h3{
+	text-align: center;
 }
