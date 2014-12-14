@@ -1,7 +1,11 @@
 $(function() {
     $(".button").on('click', function(){
-    	console.log("working!");
+    	// console.log("working!");
     	$(this).toggleClass('active');
+
+   //  	var audio = document.getElementById("conky-sound");
+			// audio.play();
+			document.getElementById('conky-sound').play();
 
     	var words = ["fun", "rain", "christmas"];
     	var rand = words[Math.floor(Math.random() * words.length)];
@@ -9,14 +13,12 @@ $(function() {
     	if ('.active'){
     		console.log(rand);
     		$( "<p>" + rand + "</p>" ).appendTo( "#paper" );
+
+    		$( ".conky" ).toggle( "bounce", { times: 3 }, "slow" );
     	} else{
     		console.log("not working!");
     	};
 
-    
-
-
-  		// $( ".conky" ).toggle( "bounce", { times: 3 }, "slow" );
 
     });
 		
