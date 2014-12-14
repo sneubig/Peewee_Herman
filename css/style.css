@@ -6,7 +6,7 @@ body, html{
 	background-repeat: no-repeat;
 }
 
-h2{
+h2, h6{
  	margin: 0;
 }
 
@@ -19,6 +19,8 @@ header{
 
 header h2{
 	color: white;
+	position: relative;
+	top: .5em;
 }
 
 .container{
@@ -58,10 +60,11 @@ img{
 	transform: translateY(2px);
 }
 
-.button span{
+.button h6{
 	position: relative;
-	top: 1.5em;
-	left: .5em;
+	top: 1em;
+	text-align: center;
+	font-size: 1.2em;
 }
 
 #paper{
