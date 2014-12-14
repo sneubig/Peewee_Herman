@@ -26,7 +26,6 @@ header h2{
 .container{
 	height: 90%;
 	width: 40%;
-	/*margin-left: 20%;*/
 	margin: 0 auto;
 	position: relative;
 	background-color: rgba(0,0,0,0.8);
@@ -41,6 +40,7 @@ header h2{
 
 img{
 	width: 50%;
+	max-width: 15em;
 	margin-left: 25%;
 	position: relative;
 }
@@ -51,20 +51,22 @@ img{
 
 .conky-start{
 	background-color: red;
+	position: relative;
+	top: -1em;
 }
 
 .scream{
-	background-color: blue;
+	background-color: yellow;
 }
 
 .button{
 	width: 6em;
-	height: 6em;
+	height: 4em;
 	border-radius: 100%;
 	border: 2px solid #fff;
 	box-shadow: -2px 2px 0px #000;
 	display: inline-block;
-	padding: 1em;
+	margin: 1em;
 }
 
 .button:active{
@@ -76,7 +78,7 @@ img{
 	position: relative;
 	top: 1em;
 	text-align: center;
-	font-size: 1.2em;
+	font-size: .8em;
 }
 
 #paper{
@@ -93,7 +95,7 @@ img{
 
 @media (min-width: 500px) and (max-width: 980px) {
 	.container{
-		width: 60%;
+		width: 70%;
 	}
 }
 
