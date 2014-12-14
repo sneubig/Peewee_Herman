@@ -36,6 +36,7 @@ header h2{
 	width: 100%;
 	position: relative;
 	top: 10%;
+	margin: 0 auto;
 }
 
 img{
@@ -59,14 +60,22 @@ img{
 	background-color: yellow;
 }
 
+.button-container{
+	width: 80%;
+	height: 30%;
+	position: relative;
+	left: 15%;
+}
+
 .button{
-	width: 6em;
+	width: 5em;
 	height: 4em;
 	border-radius: 100%;
 	border: 2px solid #fff;
 	box-shadow: -2px 2px 0px #000;
 	display: inline-block;
-	margin: 1em;
+	margin-top: 2em;
+	margin-left: 1em;
 }
 
 .button:active{
@@ -95,12 +104,26 @@ img{
 
 @media (min-width: 500px) and (max-width: 980px) {
 	.container{
-		width: 70%;
+		width: 80%;
+	}
+
+	.button-container{
+		width: 80%;
+		height: 30%;
+		position: relative;
+		left: 10%;
 	}
 }
 
 @media (max-width: 500px) {
 	.container{
 		width: 100%;
+	}
+
+	.button-container{
+		width: 90%;
+		height: 30%;
+		position: relative;
+		left: 5%;
 	}
 }
