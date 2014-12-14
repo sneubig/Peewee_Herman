@@ -1,13 +1,13 @@
 $(function() {
 
-	 	$('.button').bind('click', 'tap', function() {
+	 	$('.button').bind('click', function() {
       // remove the active class from all elements with active class
       $('.active').removeClass('active')
       // add active class to clicked element
       $(this).addClass('active');
   	});
 
-    $(".conky-start").on('click', 'tap', function(){
+    $(".conky-start").on('click', function(){
  			
  			// Conky Sound Clip
 			document.getElementById('conky-sound').play();
@@ -16,7 +16,7 @@ $(function() {
 
     });
 
-    $('.instructions').on('click', 'tap', function(){
+    $('.instructions').on('click', function(){
     	document.getElementById('peewee-instructions').play();
     });
 
