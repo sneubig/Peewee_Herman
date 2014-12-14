@@ -6,19 +6,34 @@ body, html{
 	background-repeat: no-repeat;
 }
 
+h2{
+ 	margin: 0;
+}
+
+header{
+	height: 10%;
+	width: 100%;
+	background-color: black;
+	text-align: center;
+}
+
+header h2{
+	color: white;
+}
 .container{
-	height: 80%;
-	width: 60%;
+	height: 100%;
+	width: 40%;
 	/*margin-left: 20%;*/
 	margin: 0 auto;
 	position: relative;
-	top: 10%;
+
 	background-color: rgba(0,0,0,0.8);
 }
 
-.conky{
-	width: 30%;
-	margin-left: 35%;
+img{
+	width: 50%;
+	margin-left: 25%;
+	position: relative;
 }
 
 .button{
