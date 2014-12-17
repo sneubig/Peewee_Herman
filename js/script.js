@@ -1,13 +1,13 @@
 $(function() {
 
-	 	$('.button').bind('click', function() {
+	 	$('.button').bind('touchstart click', function() {
       // remove the active class from all elements with active class
       $('.active').removeClass('active')
       // add active class to clicked element
       $(this).addClass('active');
   	});
 
-    $(".conky-start").on('click', function(){
+    $(".conky-start").on('touchstart click', function(){
  			
  			// Conky Sound Clip
 			document.getElementById('conky-sound').play();
@@ -16,15 +16,13 @@ $(function() {
 
     });
 
-    $('.instructions').on('click', function(){
+    $('.instructions').on('touchstart click', function(){
     	document.getElementById('peewee-instructions').play();
     });
 
-    $('.scream').on('click', function(){
+    $('.scream').on('touchstart click', function(){
     	document.getElementById('peewee-scream').play();
     });
-
-    $('.button').bind( "tap", tapHandler );
 
     function getSecretWord(){
     	var words = ["fun", "rain", "christmas", "look"];
@@ -38,13 +36,7 @@ $(function() {
     		console.log("not working!");
     	};
     };
-
-    function tapHandler( event ){
-      $( event.target ).addClass( "tap" );
-    };
-  }
 		
-
 });
 
 
