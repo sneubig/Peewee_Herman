@@ -60,23 +60,22 @@ img{
 }
 
 .button-container{
-	width: 80%;
+	width: 90%;
 	height: 30%;
 	position: relative;
-	left: 15%;
+	left: 10%;
 }
 
 .button{
-	width: 5em;
-	height: 4em;
+	width: 6em;
+	height: 5em;
 	border-radius: 100%;
 	border: 2px solid #fff;
 	box-shadow: -2px 2px 0px #000;
 	display: inline-block;
-	margin-top: 2em;
 	margin-left: 1em;
 	position: relative;
-	top: 0;
+	top: 2em;
 }
 
 .button:active{
@@ -86,9 +85,13 @@ img{
 
 .button h6{
 	position: relative;
-	top: 1em;
+	top: 2em;
 	text-align: center;
 	font-size: .8em;
+}
+
+.button span{
+	display: block;
 }
 
 #paper{
@@ -111,11 +114,20 @@ img{
 		width: 80%;
 	}
 
+	.content{
+		width: 100%;
+		margin: 0 auto;
+	}
 	.button-container{
-		width: 80%;
 		height: 30%;
+		width: 100%;
 		position: relative;
-		left: 10%;
+		/*left: 0%;*/
+		margin: 0 auto;
+	}
+
+	.button{
+		margin: 1em;
 	}
 }
 
@@ -124,10 +136,13 @@ img{
 		width: 100%;
 	}
 
+	.content{
+		margin: 0 auto;
+	}
 	.button-container{
-		width: 100%;
+		width: 90%;
 		height: 30%;
 		position: absolute;
-		left: 0;
+		left: 5%;
 	}
 }
