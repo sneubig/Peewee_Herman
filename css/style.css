@@ -139,10 +139,24 @@ img{
 	.content{
 		margin: 0 auto;
 	}
+
 	.button-container{
-		width: 90%;
+		width: 80%;
 		height: 30%;
 		position: absolute;
-		left: 5%;
+		left: 15%;
+	}
+
+	.button{
+		width: 5em;
+		height: 4em;
+		margin: .2em;
+	}
+
+	.button h6{
+		position: relative;
+		top: 1.4em;
+		text-align: center;
+		font-size: .7em;
 	}
 }
