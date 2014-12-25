@@ -2,7 +2,7 @@ $(function() {
 
 	 	$('.button').bind('touchstart click', function() {
       // remove the active class from all elements with active class
-      $('.active').removeClass('active')
+      $('.active').removeClass('active');
       // add active class to clicked element
       $(this).addClass('active');
   	});
