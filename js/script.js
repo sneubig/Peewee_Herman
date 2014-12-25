@@ -10,7 +10,7 @@ $(function() {
     $(".conky-start").on('touchstart click', function(){
  			
  			// Conky Sound Clip
-			document.getElementById('conky-sound').play();
+			document.getElementById('conky-sound').delay(5000).play();
 
 			getSecretWord();
 
