@@ -10,7 +10,7 @@ $(function() {
     $(".conky-start").on('touchstart click', function(){
  			
  			// Conky Sound Clip
-			document.getElementById('conky-sound').delay(5000).play();
+			document.getElementById('conky-sound').play();
 
 			getSecretWord();
 
@@ -31,7 +31,7 @@ $(function() {
     	if ('.active'){
     		$('#paper').text('');
     		console.log(rand);
-    		$( "<h3>" + rand + "</h3>" ).appendTo( "#paper" );
+    		$( "<h3>" + rand + "</h3>" ).delay(5000).appendTo( "#paper" );
     	} else{
     		console.log("not working!");
     	};
